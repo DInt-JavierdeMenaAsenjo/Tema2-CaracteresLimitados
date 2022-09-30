@@ -35,7 +35,7 @@ namespace Tema2_CaracteresLimitados
             if (ultimoTamaño > tamActual) contadorCaracteres--;
             else contadorCaracteres++;
 
-            if (tamActual == 140) texto_TextBlock.IsReadOnly = true;
+            if (tamActual >= 140) texto_TextBlock.IsReadOnly = true;
 
             ultimoTamaño = tamActual;
             contador_TextBlock.Text = $"{contadorCaracteres} / 140";
